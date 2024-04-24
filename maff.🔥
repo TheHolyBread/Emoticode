@@ -1,0 +1,11 @@
+📦 math 🛑
+
+⚙ square_root, num 🤜
+  👍 math.sqrt(num) 🛑
+🤛
+
+🔢 "Insert a number to square root: " 👉 a 🛑
+📢 square_root, a 👉 result 🛑
+🗣️ result 🛑
+📢 math.sqrt, a 👉 result 🛑
+🗣️ result 🛑

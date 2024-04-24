@@ -1,0 +1,128 @@
+💬=====IMPORT PACKAGES=====💬
+📦 random 🛑
+💬=========================💬
+
+💬 initialize variables 💬
+✏️ 0 👉 rng 🛑
+✏️ 0 👉 color 🛑
+✏️ ["red","blue","green","yellow"] 👉 colors 🛑
+✏️ 0 👉 att 🛑
+✏️ 0 👉 games 🛑
+
+💬 start and prepare a new round 💬
+⚙️ start 🤜
+  🌎 att 🛑
+  🌎 rng 🛑
+  🌎 games 🛑
+  🌎 color 🛑
+  👆 games 🛑
+  ✏️ 1 👉 att🛑
+  📢 random.randint, 2, 10 👉 rng 🛑
+  📢 random.randint, 1, 4 👉 color 🛑
+🤛
+
+💬 new procedure to handle guessing numbers 💬
+⚙️ guess 🤜
+  ✏️ [0,0] 👉 guess 🛑
+  🌎 att 🛑
+  🗣 "\💔" 🛑
+  🗣 🗿"Attempt 🤜att🤛/6..." 🛑
+  🗣 "Use 1 for Red, 2 for Blue, 3 for Green, or 4 for Yellow." 🛑
+  🔢 "Enter your guess for the card color (1 - 4): " 👉 guess[0] 🛑
+  🔢 "Enter your guess for the card number (2 - 9): " 👉 guess[1] 🛑
+  🗣 "\💔" 🛑
+  💬 if guess is out of bounds 💬
+  🤔 (guess[1] > 9 || guess[1] < 2) || (guess[0] > 4 || guess[0] < 1) 🤜
+    🗣 "Invalid guess. Please enter a number within the specified range." 🛑
+    👆 att 🛑
+    👍 0 🛑
+
+  🤷 guess[0] == color 🤜
+    🗣 "You have the correct color." 🛑
+  😒
+    🗣 "The color you chose is incorrect." 🛑
+  🤛
+    💬 if guess is bigger than rng 💬
+  🤔 guess[1] > rng 🤜
+    🗣 "Your card number is too high! Try a lower number." 🛑
+    👆 att 🛑
+
+    💬 if guess is smaller than rng 💬
+  🤷 guess[1] < rng 🤜
+    🗣 "Your card number is too low! Try a higher number." 🛑
+    👆 att 🛑
+  🤛
+
+    💬 if guess is equal to rng 💬
+  🤔 guess[1] == rng 🤜
+    🗣 "You have the correct number." 🛑
+  🤛
+
+  🤔 guess[0] == color && guess[1] == rng 🤜
+    🗣 "\💔" 🛑
+    🗣 🗿"You have guessed the correct number and color in 🤜att🤛 attempts." 🛑
+    👍 1 🛑
+  😒
+    👍 0 🛑
+  🤛
+🤛
+
+💬 handle the looping gameplay 💬
+⚙️ gameLoop 🤜
+  🗣 "Guess my Uno card!\💔The card has one of four colors: Red, Blue, Green, or Yellow.\💔The card also has a number from 2 to 9.\💔I'll give you six guesses!" 🛑
+
+  💬 let player play the game 💬
+  🌀 True 🤜
+    💬 break loop if correct guess 💬
+    📢 guess 👉 output 🛑
+    🤔 output == 1 🤜
+      💀 🛑
+    🤛
+      
+    💬 break loop if out of attempts 💬
+    🤔 att == 7 🤜
+      🗣 "\💔" 🛑
+      🗣 🗿"Sorry, you've run out of attempts. The correct number was 🤜rng🤛." 🛑
+      💀 🛑
+    🤛
+  🤛
+🤛
+
+💬 general program loop 💬
+⚙️ update 🤜
+  🌀 True 🤜
+    💬 clear console and start basic procedures 💬
+    💥 🛑
+    📢 start 🛑
+    📢 gameLoop 🛑
+
+    💬 wait a moment and ask player if they want to continue 💬
+    😴 2000 🛑
+    🗣 "\💔" 🛑
+    🙏 "Do you want to play again? (yes/no): " 👉 cont 🛑
+
+    💬 make sure input is yes or no 💬
+    🌀 True 🤜
+      🤔 cont in ["yes", "no"] 🤜
+        💀 🛑
+      😒
+        💥 🛑
+        🙏 "Invalid input. Please enter yes or no: " 👉 cont 🛑
+      🤛
+    🤛
+    💬 if player says no then break out of the loop 💬
+    🤔 cont == "no" 🤜
+      💀 🛑
+    🤛
+  🤛
+  
+  💬 clear console 💬
+  💥 🛑
+
+  💬 display gameplay stats 💬
+  🗣 🗿"Total games played: 🤜games🤛" 🛑
+  🗣 "Thanks for playing!" 🛑
+🤛
+
+💬 run the game 💬
+📢 update 🛑

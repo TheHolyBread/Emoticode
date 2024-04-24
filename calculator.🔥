@@ -1,0 +1,59 @@
+⚙️ add, x,y 🤜
+  👍 x + y 🛑
+🤛
+
+⚙️ sub, x,y 🤜
+  👍 x - y 🛑
+🤛
+
+⚙️ mult, x,y 🤜
+  👍 x * y 🛑
+🤛
+
+⚙️ div, x,y 🤜
+  👍 x / y 🛑
+🤛
+
+⚙️ fun 🤜
+  👍 hi 🛑
+🤛
+
+🌀 True 🤜
+  🔢 "Choose an option!\💔ADD      = 1\💔SUBTRACT = 2\💔MULTIPLY = 3\💔DIVIDE   = 4\💔QUIT     = -1\💔" 👉 operation 🛑
+
+  🤔 operation == -1 🤜
+    💀 🛑
+  🤛
+  
+  🔢 "Number 1: " 👉 a 🛑
+  🔢 "Number 2: " 👉 b 🛑
+
+  
+  🤔 operation == 1 🤜
+    📢 add, a,b 👉 c 🛑
+    ✏️️ '+' 👉 operation 🛑
+    
+  🤷 operation == 2 🤜
+    📢 sub, a,b 👉 c 🛑
+    ✏️️ '-' 👉 operation 🛑
+    
+  🤷 operation == 3 🤜
+    📢 mult, a,b 👉 c 🛑
+    ✏️ '*' 👉 operation 🛑
+    
+  🤷 operation == 4 🤜
+    📢 div, a,b 👉 c 🛑
+    ✏️ '/' 👉 operation 🛑
+    
+  😒
+    🗣 'Please enter a valid operation!' 🛑
+    ⏭ 🛑
+  🤛
+  
+  🗣 🗿'🤜a🤛 🤜operation🤛 🤜b🤛 = 🤜c🤛' 🛑
+  😴 1000 🛑
+  🙏 "Press enter to continue" 👉 a 🛑
+  💥 🛑
+🤛
+
+🗣 "done" 🛑

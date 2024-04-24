@@ -1,0 +1,48 @@
+💬 Classes follow the same syntax as Python, except a class is the classroom, and you assign values to the students 💬
+
+🏫 My_Class 🤜
+
+  💬 First you create the Emoticode equivalent to Python's init function with its parameters, though the first self parameter is done for you 💬
+  
+  🧑‍🏫 name, age 🤜
+  
+    💬 Assign values to the students to use in the class following the Emoticode variable assignment syntax 💬
+  
+    🧑‍🎓 name 👉 name 🛑
+    🧑‍🎓 age 👉 age 🛑
+    🧑‍🎓 🗿"🤜name🤛 is 🤜age🤛 years old!" 👉 info 🛑
+  🤛
+
+  🔤 🤜
+    👍 this.info 🛑
+  🤛
+  
+  🗃 🤜
+    👍 🗿"My_Class(🤜this.name🤛, 🤜this.age🤛, 🤜this.info🤛)" 🛑
+  🤛
+
+  💄 staticmethod 🛑
+  ⚙ static_func, a, b 🤜
+    👍 a + b 🛑
+  🤛
+
+  🗑 🤜
+    🗣️ "Object deleted :(" 🛑
+  🤛
+🤛
+
+✏️ My_Class("Jeremy", 15) 👉 myObj 🛑
+🗣️ myObj 🛑
+📢 repr, myObj 👉 classRepr 🛑
+🗣️ classRepr 🛑
+📢 myObj.static_func, myObj.age, 1 👉 c 🛑
+🗣️ c 🛑
+🏫🔫 My_Class 🛑
+
+💬
+😤 🤜
+  🗣️ My_Class("Jeremy", 15) 🛑
+😮‍💨 NameError 👉 e 🤜
+  🗣️ e 🛑
+🤛
+💬
