@@ -1,5 +1,9 @@
 # **emoticode**<br>*the gentlemen’s programming language*
 
+> DOES NOT CURRENTLY WORK ON WINDOWS
+> IT IS RECOMMENDED TO RUN ON A LINUX ENVIROMENT
+> To run a program, place file in the scripts folder, then run the transpiler and use the command `build <filename without file extension>` more options available by using the `help` command
+
 ### Introduction
 This documentation will teach you almost everything you need to know to start programming with Emoticode. There will be plenty of code snippets that will show examples of how the code would look. The code snippets will typically contain two code blocks, first one being the code, and the second one being the result.
 
